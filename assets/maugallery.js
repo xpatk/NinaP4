@@ -164,6 +164,8 @@
         if (!a(this).hasClass("active-tag")) {
           a(".active-tag").removeClass("active active-tag"),
             a(this).addClass("active-tag");
+          a(".nav-link").removeClass("active");
+          a(this).addClass("active");
           var t = a(this).data("images-toggle");
           a(".gallery-item").each(function () {
             a(this).parents(".item-column").hide(),
